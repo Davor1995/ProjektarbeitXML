@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lieferschein>
+    <Kopf>
+        <LieferscheinNummer>LS-2024-0813</LieferscheinNummer>
+        <Datum>2024-08-13</Datum>
+        <Versandart>Standardversand</Versandart>
+        <Lieferbedingungen>Frei Haus</Lieferbedingungen>
+    </Kopf>
+    
+    <Firma>
+        <Name>Sneaker World GmbH</Name>
+        <Adresse>
+            <Straße>Musterstraße 1</Straße>
+            <Stadt>Berlin</Stadt>
+            <PLZ>10115</PLZ>
+            <Land>Deutschland</Land>
+        </Adresse>
+        <Kontakt>
+            <Telefon>+49 30 12345678</Telefon>
+            <Email>info@sneakerworld.de</Email>
+        </Kontakt>
+        <UStIdNr>DE123456789</UStIdNr>
+    </Firma>
+
+    <Kunde>
+        <Name>Max Mustermann</Name>
+        <Adresse>
+            <Straße>Beispielweg 12</Straße>
+            <Stadt>München</Stadt>
+            <PLZ>80331</PLZ>
+            <Land>Deutschland</Land>
+        </Adresse>
+        <Kontakt>
+            <Telefon>+49 89 98765432</Telefon>
+            <Email>max.mustermann@example.com</Email>
+        </Kontakt>
+    </Kunde>
+
+    <Positionen>
+        <Position>
+            <Artikelnummer>AF1-WH-42</Artikelnummer>
+            <Bezeichnung>Nike Airforce One - Weiß, Größe 42</Bezeichnung>
+            <Menge>1</Menge>
+            <Einheit>paar</Einheit>
+            <Einzelpreis>110.00</Einzelpreis>
+            <Gesamtpreis>110.00</Gesamtpreis>
+            <Mehrwertsteuer>
+                <Steuersatz>19%</Steuersatz>
+                <Betrag>20.90</Betrag>
+            </Mehrwertsteuer>
+        </Position>
+        <Position>
+            <Artikelnummer>AF1-BL-44</Artikelnummer>
+            <Bezeichnung>Nike Airforce One - Schwarz, Größe 44</Bezeichnung>
+            <Menge>1</Menge>
+            <Einheit>paar</Einheit>
+            <Einzelpreis>110.00</Einzelpreis>
+            <Gesamtpreis>110.00</Gesamtpreis>
+            <Mehrwertsteuer>
+                <Steuersatz>19%</Steuersatz>
+                <Betrag>20.90</Betrag>
+            </Mehrwertsteuer>
+        </Position>
+    </Positionen>
+
+    <Gesamtbetrag>
+        <NettoBetrag>220.00</NettoBetrag>
+        <MehrwertsteuerBetrag>41.80</MehrwertsteuerBetrag>
+        <BruttoBetrag>261.80</BruttoBetrag>
+    </Gesamtbetrag>
+
+    <Versand>
+        <Versandkosten>5.00</Versandkosten>
+        <Mehrwertsteuer>
+            <Steuersatz>19%</Steuersatz>
+            <Betrag>0.95</Betrag>
+        </Mehrwertsteuer>
+        <Gesamtversandkosten>5.95</Gesamtversandkosten>
+    </Versand>
+
+    <Gesamt>
+        <GesamtBruttoBetrag>267.75</GesamtBruttoBetrag>
+    </Gesamt>
+</Lieferschein>
