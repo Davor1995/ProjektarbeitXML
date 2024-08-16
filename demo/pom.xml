@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>0.1</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.mainclass>com.example.Main</project.mainclass>
     </properties>
@@ -68,17 +68,19 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <release>17</release>
+                    <release>21</release>
                 </configuration>
             </plugin>
 
-            <!-- JavaFX Plugin for easier execution and configuration -->
+            <!-- JavaFX Plugin für das Einbinden der Runtime -->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>${project.mainclass}</mainClass>
+                    <launcher>app</launcher> <!-- Stellt sicher, dass die JavaFX Runtime gestartet wird -->
+
                 </configuration>
                 <executions>
                     <execution>
@@ -90,4 +92,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

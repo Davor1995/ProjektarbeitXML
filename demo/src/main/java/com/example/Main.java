@@ -45,8 +45,9 @@ public class Main extends Application {
     private void createPdf() {
         if (selectedFile != null) {
             PdfGenerator pdfGenerator = new PdfGenerator();
-            pdfGenerator.generatePdfFromXml(selectedFile.getAbsolutePath(), "output/Lieferschein.pdf");
-            textArea.setText("PDF wurde erfolgreich erstellt!");
+            String pdfPath = "output/Lieferschein.pdf";
+            pdfGenerator.generatePdfFromXml(selectedFile.getAbsolutePath(), pdfPath);
+            textArea.setText("PDF wurde erfolgreich erstellt und befindet sich hier: " + pdfPath);
         } else {
             textArea.setText("Keine XML-Datei ausgewählt.");
         }
